@@ -77,18 +77,10 @@ altura 200px*/
   object-fit: cover;
 }
 
-/*Imagen compuesta con un texto
-de descripción*/
-.imagen-compuesta{
-  position: relative;
-}
-
 /*Capa negra sobre la imagen,
 para que se ubique el texto sobre
 la misma, tiene animación*/
 .imagen-descripcion {
-  height: inherit;
-  position: absolute;
   margin: 0;
   top: 0;
   bottom: 0;
