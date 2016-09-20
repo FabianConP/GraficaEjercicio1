@@ -1,0 +1,32 @@
+/*Pie de página con color de fondo "azul",
+color de texto blanco y sus correspondientes
+paddings*/
+.footer {
+  background-color: #303f9f;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+}
+
+/*Los enlances dentro del pie de página
+tiene color de fuente blanco, no tiene subrayado
+y tiene animación cuando se pasa sobre el mismo*/
+.footer a{
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+  transition: color .2s ease-out, border-bottom-color .2s ease-out;
+}
+
+/*Cambio de color a "rojo" cuando se pasa
+sobre un enlace dentro del pie de página*/
+.footer a:hover{
+  color: #F44336;
+}
+
+/*Con margen 0, los textos que estén contenidos dentro
+de la etiqueta p en el pie de página*/
+.footer p{
+  margin: 0;
+}

@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <!--Título de la página-->
+    <title>Acerca</title>
+
+    <!--Especificación de la codificación del documento-->
+    <meta charset="UTF-8">
+
+    <!-- Soporte para diseños adaptativos-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+
+    <!--Fuente, tipografia general-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--Icono del navegador-->
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+
+
+  <body>
+
+    <!-- INICIO Barra de navegación-->
+    <ul class=navbar>
+      <!--Elemento de navegación página de inicio-->
+      <li> <a href="index.html">Inicio</a></li>
+
+      <!--Menú desplegable-->
+      <li class="desplegable">
+
+        <!--Botón que despliega el contenido-->
+        <a class="boton-desplegable">Versiones</a>
+
+        <!--Contenido que se despliega-->
+        <div class="dropdown-content">
+
+          <!--Enlance a la página de Nougat-->
+          <a href="nougat.html">Nougat</a>
+
+          <!--Enlance a la página de Marshmallow-->
+          <a href="marshmallow.html">Marshmallow</a>
+
+          <!--Enlance a la página de Lollipop-->
+          <a href="lollipop.html">Lollipop</a>
+        </div>
+      </li>
+
+      <!--Elemento de navegación página de historia-->
+      <li><a href="historia.html">Historia</a></li>
+
+      <!--Elemento de navegación página de acerca-->
+      <li class="actual"><a href="acerca.html">Acerca</a></li>
+    </ul>
+    <!-- FIN Barra de navegación-->
+
+    <!--Contenido principal de la página-->
+    <div id="contenido-principal">
+
+      <!--Tarjeta Google Material Design-->
+      <div class="card">
+        <div class="contenedor">
+
+          <!--Encabezado de la tarjeta-->
+          <div class="header">
+            <!--Imagen encabezado de la tarjeta-->
+            <img src="images/android2.jpg" />
+          </div>
+
+          <h1>Acerca</h1>
+
+          <!--Contenido tarjeta-->
+          <h2>Proyectos</h2>
+          <!--Tarjeta proyecto de maratones-->
+          <div class="card">
+            <div class="contenedor">
+              <!--Encabezado tarjeta de proyecto-->
+              <div class="header">
+                <div class="imagen-compuesta">
+                  <img src="images/maratones.jpg"/>
+                  <p class="imagen-descripcion">Maratón nacional 2015</p>
+                </div>
+              </div>
+
+              <!--Contenido de la tarjeta-->
+              <h3>Maratones de programación</h3>
+              <p align="justify">Competencias en las que se debe resolver un
+                conjunto de problemas con solución matemática - algoritmica.</p>
+            </div>
+          </div>
+          <br> <br> <br>
+
+          <!--Tarjeta proyecto de Recapp-->
+          <div class="card">
+            <div class="contenedor">
+              <!--Encabezado tarjeta de Recapp-->
+              <div class="header">
+                <div class="imagen-compuesta">
+                  <img src="images/recapp.png"/>
+                  <p class="imagen-descripcion">App para Android</p>
+                </div>
+              </div>
+
+              <!--Titulo de la tarjeta-->
+              <h3>Recapp</h3>
+              
+              <!--Contenido de la tarjeta-->
+              <p align="justify">Aplicación móvil para encontrar los puntos más
+                cercanos de reciclaje con uso de datos públicos del gobierno,
+                mediante almacenamiento local y basado en la nube.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="footer">
+      <p align="center">© Copyright Fabian Conejo<br />
+        <!-- Enlace al mapa de sitio -->
+        <a href="mapa.html">Mapa del sitio</a>
+      </p>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,112 @@
+@import "navbar.css";
+@import "responsive.css";
+@import "footer.css";
+
+/*Cuerpo de la página web*/
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 0 0;
+}
+
+/*Contenedor con padding, basedo en guías
+de Google Material Design*/
+.contenedor{
+  padding: 16px 16px 16px 16px;
+
+}
+
+/*Tarjeta de material design
+bordes con sombra,
+fondo blanco*/
+.card {
+  background: white;
+  border-radius: 2px;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: rgba(0, 0, 0, 0.87);
+
+}
+
+/*Los textos con h1 que estén dentro de
+la tarjeta tendrán la fuente Roboto Medium*/
+.card h1{
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+/*Los textos con h2 que estén dentro de
+tarjeta tendrán la fuente Roboto Light*/
+.card h2{
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: normal;
+}
+
+/*Los textos contenidos en la etiqueta p
+que estén dentro de la tarjeta tendrán
+la fuente Roboto Regular*/
+.card p{
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+/*Los enlances que estén dentro de la tarjeta
+tendrá un color "rojo" y sin subrayado,
+animación cuando pase sobre el enlace*/
+.card a{
+  color: #F44336;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+  transition: all .2s ease-out;
+}
+
+/*Los enlances dentro de la tarjeta
+tendrán un subrayado "rojo" cuando se pase
+el cursor sobre el enlace*/
+.card a:hover{
+  border-bottom: solid 1px #F44336;
+}
+
+/*Las imágenes en el encabezado de la tarjeta
+se ajustarán, ancho todo el posible y
+altura 200px*/
+.card .header img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Imagen compuesta con un texto
+de descripción*/
+.imagen-compuesta{
+  position: relative;
+}
+
+/*Capa negra sobre la imagen,
+para que se ubique el texto sobre
+la misma, tiene animación*/
+.imagen-descripcion {
+  height: inherit;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+
+}
+
+/*Cuando se pase sobre la imágen
+la opacidad de la capa negra aumenta,
+para que sea posible la lectura de la misma*/
+.imagen-compuesta:hover .imagen-descripcion {
+  visibility: visible;
+  opacity: 1;
+}

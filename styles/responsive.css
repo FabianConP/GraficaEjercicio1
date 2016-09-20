@@ -1,0 +1,99 @@
+/*Dispositivos con ancho menor a 480px*/
+@media screen and ( max-width: 479px) {
+
+  /*Padding a la barra de navegación*/
+  ul{
+    padding-left: 16px;
+  }
+
+  /*Padding a al contenido de la página web*/
+  #contenido-principal{
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
+
+  /*Ancho de los vídeos */
+  .full-width iframe{
+    width: 280px;
+    height: 280px;
+  }
+
+  /*Máximo ancho de una imágen*/
+  .image-responsive{
+    width: 280px;
+  }
+}
+
+/*Dispositivos con acho entre 480px y 767px*/
+@media screen and ( min-width: 480px) and ( max-width: 767px) {
+
+  /*Padding a la barra de navegación*/
+  ul{
+    padding-left: 10%;
+  }
+
+  /*Padding a al contenido de la página web*/
+  #contenido-principal{
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /*Máximo ancho de una imágen*/
+  .image-responsive{
+    width: 280px;
+  }
+
+  .full-width{
+      position: relative;
+    	padding-bottom: 36.25%; /* 16:9 */
+    	padding-top: 25px;
+    	height: 0;
+    }
+
+  /*Ancho de los vídeos */
+  .full-width iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 100%;
+    }
+}
+
+@media screen and ( min-width: 768px){
+  /*Padding a la barra de navegación*/
+  ul{
+    padding-left: 10%;
+  }
+
+  /*Padding a al contenido de la página web*/
+  #contenido-principal{
+    padding-top: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /*Máximo ancho de una imágen*/
+  .image-responsive{
+    width: 580px;
+  }
+
+  .full-width{
+      position: relative;
+    	padding-bottom: 58.25%; /* 16:9 */
+    	padding-top: 25px;
+    	height: 0;
+    }
+
+  /*Ancho de los vídeos */
+  .full-width iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}

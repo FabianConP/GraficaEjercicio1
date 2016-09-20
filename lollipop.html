@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <!--Título de la página-->
+    <title>Lollipop</title>
+
+    <!--Especificación de la codificación del documento-->
+    <meta charset="UTF-8">
+
+    <!-- Soporte para diseños adaptativos-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+
+    <!--Fuente, tipografia general-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--Icono del navegador-->
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+
+
+  <body>
+
+    <!-- INICIO Barra de navegación-->
+    <ul class=navbar>
+      <!--Elemento de navegación página de inicio-->
+      <li> <a href="index.html">Inicio</a></li>
+
+      <!--Menú desplegable-->
+      <li class="desplegable actual">
+
+        <!--Botón que despliega el contenido-->
+        <a class="boton-desplegable">Versiones</a>
+
+        <!--Contenido que se despliega-->
+        <div class="dropdown-content">
+
+          <!--Enlance a la página de Nougat-->
+          <a href="nougat.html">Nougat</a>
+
+          <!--Enlance a la página de Marshmallow-->
+          <a href="marshmallow.html">Marshmallow</a>
+
+          <!--Enlance a la página de Lollipop-->
+          <a href="lollipop.html">Lollipop</a>
+        </div>
+      </li>
+
+      <!--Elemento de navegación página de historia-->
+      <li><a href="historia.html">Historia</a></li>
+
+      <!--Elemento de navegación página de acerca-->
+      <li><a href="acerca.html">Acerca</a></li>
+    </ul>
+    <!-- FIN Barra de navegación-->
+
+    <!--Contenido principal de la página-->
+    <div id="contenido-principal">
+
+      <!--Tarjeta Google Material Design-->
+      <div class="card">
+        <div class="contenedor">
+
+          <!--Encabezado de la tarjeta-->
+          <div class="header">
+            <!--Imagen encabezado de la tarjeta-->
+            <img src="images/lollipop.jpg" />
+          </div>
+
+          <!--Título tarjeta-->
+          <h1>Lollipop</h1>
+
+          <!--Contenido tarjeta-->
+          <p align="justify">Android Lollipop es una versión del sistema
+            operativo para dispositivos móviles Android. Fue dada a conocer
+            el 25 de junio de 2014 durante el
+            <a href="https://events.google.com/io2016/">Google I/O.</a> 2014 como Android L y
+            su versión fue liberada el día siguiente a determinados dispositivos
+            Google Nexus, concretamente el Nexus 5 y la tableta Nexus 7 2013.
+            El 15 de octubre de 2014, Google dio el nombre oficial de Android L:
+            Lollipop (al español: chupeta, piruleta o paletita) y la versión es
+            5.0, siendo anunciado oficialmente junto al Nexus 6, Nexus 9 y Nexus
+            Player. Su versión en código <a href="https://source.android.com/">AOSP</a>
+            se lanzó el 3 de noviembre junto a
+            los Nexus 6 y Nexus 9 (primeros dispositivos en incluirlo).</p>
+            Fuente:<a href="https://es.wikipedia.org/wiki/Android_Lollipop">Wikipedia</a><br />
+            <!--Video acerca de Nougat, desde YouTube-->
+            <div class="full-width">
+              <iframe src="https://www.youtube.com/embed/vTxTLyLUjP4" frameborder="0" allowfullscreen
+              style="display:block;"></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="footer">
+      <p align="center">© Copyright Fabian Conejo<br />
+        <!-- Enlace al mapa de sitio -->
+        <a href="mapa.html">Mapa del sitio</a>
+      </p>
+    </div>
+  </body>
+</html>
